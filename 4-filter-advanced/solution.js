@@ -44,3 +44,23 @@ const tvShows = [
 ];
 
 // Your code below
+function watched(e) {
+  if (e.watched === true) {
+    return true;
+  }
+}
+console.log(tvShows.filter(watched));
+
+function great(e) {
+  if (e.rating >= 9) {
+    return true;
+  }
+}
+console.log(tvShows.filter(great));
+
+function old(e) {
+  if (e.publishingYear < 2015) {
+    return true;
+  }
+}
+console.log(tvShows.filter(old));

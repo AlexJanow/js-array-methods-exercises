@@ -44,3 +44,24 @@ const tvShows = [
 ];
 
 // Your code below
+
+console.log(tvShows.map((x) => x.title));
+console.log(
+  tvShows.map(
+    (x) =>
+      (x = {
+        title: x.title,
+        rating: x.rating,
+      })
+  )
+);
+
+const tv = tvShows.map((x) => {
+  if (x.rating >= 9) {
+    return x.title.toUpperCase();
+  } else {
+    return x.title.toLowerCase();
+  }
+});
+
+console.log(tv);

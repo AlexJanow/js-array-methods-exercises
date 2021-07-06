@@ -9,3 +9,8 @@ const movies = [
 ];
 
 // Your code below
+movies.forEach(print);
+
+function print(el) {
+  console.log(el);
+}
